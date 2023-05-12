@@ -5,6 +5,7 @@ import Features from './components/Features';
 import Collaborate from './components/Collaborate';
 import Testimonial from './components/Testimonial';
 import Registration from './components/Registration';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Testimonial />
         <Registration />
       </main>
+      <Footer />
     </>
   );
 }
