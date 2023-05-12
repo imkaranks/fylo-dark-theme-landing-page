@@ -1,0 +1,8 @@
+.bg-curve {
+  @apply
+    bg-[url('./assets/images/bg-curvy-mobile.svg')]
+    bg-contain
+    bg-no-repeat
+    bg-bottom
+    sm:bg-[url('./assets/images/bg-curvy-desktop.svg')];
+}
