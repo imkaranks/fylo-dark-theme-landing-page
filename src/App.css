@@ -15,3 +15,9 @@
     bg-no-repeat bg-contain
     w-12 h-12
 }
+.registration {
+  background-image: linear-gradient(
+    hsl(218, 28%, 13%) 0% 60%,
+    hsl(216, 53%, 9%) 60%
+  );
+}
