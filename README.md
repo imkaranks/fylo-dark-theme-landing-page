@@ -13,8 +13,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -28,8 +26,8 @@ Users should be able to:
 
 ![](./design/desktop-preview.jpg)
 
+<!-- # To Do # -->
 <!-- ### Links
-** # To do # **
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 
@@ -52,6 +50,7 @@ This challenge really helped me to learn and see tailwindcss in action which I h
 I like how this approach of writing css pushes you towards writing css with utilities rather than naming the element with a suitable classes which takes quite a time and that without compromising customizations.
 
 #### With Vanilla CSS
+
 ```html
 <details class="accordion">
   <summary class="accordion__summary">Some Lovely Title</summary>
@@ -67,7 +66,6 @@ I like how this approach of writing css pushes you towards writing css with util
   border: 1px solid black;
   padding: 0 1rem 1rem 1rem;
 }
-
 .accordian__summary {
   font-size: 1.125rem;
   font-weight: 600;
@@ -75,8 +73,9 @@ I like how this approach of writing css pushes you towards writing css with util
   padding-block: 0.5rem;
 }
 ```
----
+
 #### With tailwindcss
+
 ```html
 <details class="w-11/12 mx-auto border border-black px-4 pb-4">
   <summary class="text-lg font-semibold border-b border-b-black py-2">
@@ -91,4 +90,6 @@ I like how this approach of writing css pushes you towards writing css with util
 ## Author
 
 - Website - [Karan Sethi](https://imkaranks.github.io/)
+
+<!-- # To Do # -->
 <!-- - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername) -->
