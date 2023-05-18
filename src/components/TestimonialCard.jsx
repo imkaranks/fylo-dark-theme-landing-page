@@ -1,8 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { card } from '../utils/motion'
 
 function TestimonialCard({ authorName, authorImage, authorReview, authorPost }) {
   return (
-    <figure className='testimonial__card | relative bg-primary-400 p-6 basis-96 flex flex-col gap-6 rounded-md shadow-lg'>
+    <motion.figure
+      className='testimonial__card | relative bg-primary-400 p-6 basis-96 flex flex-col gap-6 rounded-md shadow-lg'
+      variants={card}
+    >
       <blockquote>{authorReview}</blockquote>
       <div className='flex gap-2'>
         <img
@@ -15,7 +20,7 @@ function TestimonialCard({ authorName, authorImage, authorReview, authorPost }) 
           <span className='text-[7px] uppercase'> {authorPost}</span>
         </figcaption>
       </div>
-    </figure>
+    </motion.figure>
   )
 }
 

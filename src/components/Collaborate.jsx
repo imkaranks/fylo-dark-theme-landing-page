@@ -1,6 +1,8 @@
 import React from 'react';
 import stayProductiveImg from '../assets/images/illustration-stay-productive.png';
 import iconArrow from '../assets/images/icon-arrow.svg';
+import { motion } from 'framer-motion';
+import { textContent } from '../utils/motion';
 
 function Collaborate() {
   return (
@@ -10,7 +12,12 @@ function Collaborate() {
           src={stayProductiveImg}
           alt="stay productive"
         />
-        <div className='flex flex-col gap-4 justify-center items-start'>
+        <motion.div
+          className='flex flex-col gap-4 justify-center items-start'
+          variants={textContent}
+          initial="offscreen"
+          whileInView="onscreen"
+        >
           <h2 className='text-2xl sm:text-3xl md:text-4xl text-white max-w-[15ch] font-bold font-accent' id='collaborate-title'>Stay productive, wherever you are</h2>
           <p>
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
@@ -28,7 +35,7 @@ function Collaborate() {
               role='image'
             />
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
